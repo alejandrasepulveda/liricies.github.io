@@ -11,7 +11,7 @@ function iniciarSesion() {
     
         if (usuario.email === email && usuario.password === password) {
 
-            window.location.href = 'inicio.html';
+            window.location.href = '../inicio2/inicio.html';
         } else {
             alert('Correo electrónico o contraseña incorrectos. Inténtalo de nuevo.');
         }

@@ -17,7 +17,7 @@ function registrarUsuario() {
 
     localStorage.setItem('usuario', JSON.stringify(usuario));
 
-    window.location.href = 'ingreso.html';
+    window.location.href = '../ingreso/ingreso.html';
 }
 
 
