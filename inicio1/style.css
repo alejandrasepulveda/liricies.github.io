@@ -108,7 +108,7 @@ body{
 .banner__text p{
     color: var(--other-color);
     font-size: var(--p-size);
-    line-height: 3px;
+    line-height: 20px;
     margin-bottom: 60px;
 }
 .banner__text a{
@@ -169,7 +169,7 @@ body{
 
 }
 .info__text {
-    margin-top: 10px;
+
     max-width: 400px; 
     text-align: left;
     font-size: 18.5px;
@@ -313,4 +313,31 @@ footer {
 }
 .footer__copyright {
     margin-top: 20px;
+}
+
+
+@media screen and (min-width: 1247px) and (max-width: 1390px) {
+    .navbar {
+        padding: 20px 5%; /
+    }
+}
+@media screen and (max-width: 1047px) {
+    .navbar__text {
+        display: none; 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--backgroung-color);
+        box-shadow: 0 1px 0 rgb(14 55 54 / 10%);
+    }
+
+    .navbar__text a {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
 }
