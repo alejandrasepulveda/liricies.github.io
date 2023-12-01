@@ -1,9 +1,8 @@
 function iniciarSesion() {
-    // Obtener valores del formulario
+
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    // Obtener usuario del localStorage (simulado)
     var usuarioGuardado = localStorage.getItem('usuario');
     
     if (usuarioGuardado) {
