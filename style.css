@@ -23,7 +23,7 @@ body{
     background-color: var(--backgroung-color);
 }
 
-.barra{
+.navbar{
     position: fixed;
     top: 0;
     right: 0;
@@ -37,46 +37,44 @@ body{
     padding: 20px 10%;
     transition: all 0.5s ease;
 }
-.logo{
+.navbar__logo{
     display: flex;
     align-items: center;
 }
-
-.logo i{
+.navbar__logo i{
     color: var(--main-color);
     font-size: 28px;
     width: 40px;
 }
-.logo span{
+.navbar__logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     font-weight: 600;
 }
-
-.navbar{
+.navbar__text{
     display: flex;
 }
-.navbar a{
+.navbar__text a{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 10px 22px;
     transform: all 0.5s ease;
 }
-.navbar a:hover{
+.navbar__text a:hover{
     color: var(--main-color);
 }
-.user{
+.navbar__user{
     display: flex;
 }
-.user a{
+.navbar__user a{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-left: 5px;
     margin-right: 20px;
     transition: all 0.5s ease;
 }
-.user a:hover{
+.navbar__user a:hover{
     color:var(--main-color);
 }
 
@@ -91,14 +89,12 @@ body{
     display: none;
 }
 
-section{
-    padding: 60px 14% 70px;
-}
 .banner{
+    padding: 60px 14% 70px;
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(imagenes/Diseño\ sin\ título\ \(9\).png);
+    background-image: url(imagenes/banner.png);
     background-size: cover;
     background-position: center;
     display:flex;
@@ -128,7 +124,7 @@ section{
     border-radius: 20px;
     transition: all 0.5s ease;
 }
-.button:hover{
+.banner__button:hover{
  background-color: var(--text-color);
 }
 
@@ -141,19 +137,27 @@ section{
     padding-bottom: 20px;
   }
   
-.heading {
-    margin-top: 20px;
+.info__heading {
+    margin-top: 40px;
     margin-bottom: 20px;
-  }
+}
+.info__heading h1{
+    color: var(--second-color);
+    font-size: var(--medium-size);
+}
+.info__heading span{
+    font-size: var(--p-size);
+}
   
-.content {
+.info__content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
   
 .info__img {
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
     max-width: 50%;
     height: auto;
 }
@@ -174,4 +178,7 @@ section{
     max-width: 400px; 
     text-align: left;
     font-size: 18.5px;
+}
+.info__img:hover img{
+    transform: scale(1.1);
 }
