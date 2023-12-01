@@ -60,3 +60,8 @@ button {
 button:hover {
     background-color: var(--text-color);
 }
+.container a{
+    color: var(--text-color);
+    padding: 20px 100px;
+    text-decoration: none;
+}

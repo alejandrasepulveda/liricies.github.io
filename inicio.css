@@ -64,8 +64,15 @@ body{
 .navbar__text a:hover{
     color: var(--main-color);
 }
+
 .navbar__user{
     display: flex;
+    font-size: 1.2rem;
+}
+.navbar__user span{
+    color: var(--other-color);
+    padding-right: 20px;
+    font-weight: bold;
 }
 .navbar__user a{
     color: var(--text-color);
@@ -154,7 +161,7 @@ body{
 .info__img {
     margin-left: 40px;
     margin-right: 20px;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -173,7 +180,6 @@ body{
     max-width: 400px; 
     text-align: left;
     font-size: 18.5px;
-    margin-right: 15px;
 }
 .info__img:hover img{
     transform: scale(1.1);
