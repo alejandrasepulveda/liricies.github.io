@@ -77,7 +77,6 @@ body{
 .navbar__user a:hover{
     color:var(--main-color);
 }
-
 #menu-icon{
     color: var(--text-color);
     display: flex;
@@ -101,13 +100,11 @@ body{
     align-items: center;
     justify-content: flex-start;
 }
-
 .banner__text h1{ 
     color: var(--text-color);
     font-size: var(--big-size);
     margin-bottom: 15px;
 }
-
 .banner__text p{
     color: var(--other-color);
     font-size: var(--p-size);
@@ -135,8 +132,7 @@ body{
     text-align: center;
     background-color: var(--other-color);
     padding-bottom: 20px;
-  }
-  
+}
 .info__heading {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -172,7 +168,6 @@ body{
     height: auto;
 
 }
-  
 .info__text {
     margin-top: 10px;
     max-width: 400px; 
@@ -181,4 +176,65 @@ body{
 }
 .info__img:hover img{
     transform: scale(1.1);
+}
+
+.servicios{
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-bottom: 20px;
+}
+.servicios__tittle h2{
+    font-size: var(--medium-size);
+    text-align: center;
+    font-weight: 800;
+    color: var(--text-color);
+    padding-top: 20px;
+}
+.servicios__cajas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+.servicios__caja{
+    position: relative;
+    cursor: pointer;
+}
+.servicios__caja img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.servicios__caja h4{
+    font-size: var(--p-size);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.50s ease;
+}
+.servicios__caja h4:hover{
+    color: var(--other-color);
+    cursor: pointer;
+}
+.servicio__caja h5{
+    color: var(--text-color);
+    font-size: var(--p-size);
+    font-weight: 600;
+}
+.top{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 30px;
+    width: 60px;
+    color: var(--backgroung-color);
+    background: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
